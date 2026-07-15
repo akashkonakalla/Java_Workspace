@@ -43,8 +43,9 @@ public class Wrapper {
 		//String to int
 		int s=Integer.parseInt(w.s);
 		System.out.println(Integer.parseInt(w.s)+1);
-		
+		System.out.println(s+10);
 		//String to double
+		
 		
 		System.out.println(Double.parseDouble(w.s));
 		
