@@ -37,7 +37,7 @@ public class Calculator {
 		System.out.println("Multiplication of "+a+" and "+b+ " is : "+(a*b));
 	}
 	void divide(double a, float b) {
-		System.out.printf("Division of %.3f \n \n", (a/b));
+		System.out.printf("Division of %.3f \n", (a/b));
 		System.out.println("division is \n"+ String.format("%.2f", (a/b)));
 	}
 	double subtract(double a,double b) {
