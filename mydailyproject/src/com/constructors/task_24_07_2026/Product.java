@@ -1,7 +1,7 @@
 package com.constructors.task_24_07_2026;
 
+import java.awt.PageAttributes.PrintQualityType;
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
 
 /*
  * Java
@@ -40,7 +40,7 @@ public class Product {
 	double cost;
 	
 	public Product() {
-		
+		this("unknown");
 		productName="unknown";
 		price=0;
 		quantity=0;
@@ -48,7 +48,6 @@ public class Product {
 	}
 	
 	public Product(String productName, double price, int quantity) {
-		this(productName,price);
 		this.productName = productName;
 		this.price = price;
 		this.quantity = quantity;
@@ -58,13 +57,13 @@ public class Product {
 	}
 
 	public Product(String productName, double price) {
-		this(productName);
+		this(productName,price,0);
 		this.productName = productName;
 		this.price = price;
 	}
 
 	public Product(String productName) {
-		this();
+		this(productName,0);
 		this.productName = productName;
 	}
 
