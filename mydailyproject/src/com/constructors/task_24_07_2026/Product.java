@@ -1,6 +1,5 @@
 package com.constructors.task_24_07_2026;
 
-import java.awt.PageAttributes.PrintQualityType;
 import java.util.Scanner;
 
 /*
