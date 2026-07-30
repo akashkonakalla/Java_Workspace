@@ -12,6 +12,8 @@ public class DivisibleBy4 {
 		int a = sc.nextInt();
 		if (a % 4 == 0)
 			System.out.println("divisible by 4");
+		else
+			System.out.println("not divisible by 4");
 
 	}
 
