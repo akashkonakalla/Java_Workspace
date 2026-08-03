@@ -33,9 +33,12 @@ public class SwichCalcWithReturnType {
 			yield a % b;
 
 		}
-		default -> throw new IllegalArgumentException("Unexpected value: " + op);
+		default -> {
+			System.out.println("Invalid operator");
+			yield 0;
+		}
 		};
-
+		
 		System.out.println("Resut of " + a + " " + op + " " + b + " is : " + res);
 
 	}
