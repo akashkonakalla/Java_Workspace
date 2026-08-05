@@ -13,7 +13,7 @@ Sum of Digits: 10
  */
 public class SumOfDigits {
 
-	int sumofDigits(int n) {
+	static int sumofDigits(int n) {
 		int sum = 0;
 		while (n > 0) {
 			int rem = n % 10;
