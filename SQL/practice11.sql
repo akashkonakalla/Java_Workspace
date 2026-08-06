@@ -19,5 +19,6 @@ select *from dept where deptno not in (select distinct deptno from emp);
 select deptno from emp where empno in (select empno from emp group by empno having count(*)<0);
 
 select *from emp where sal=(select sal from emp where ename like 'scott');
-select *from emp where sal > (select avg(sal) from emp group by deptno  );
+select *from emp  where sal > (select avg(sal) as average from emp where emp.deptno = emp.deptno );
 
+select *from emp where deptno = (select deptno from emp group by deptno having sum(sal)= (select max(total) from  (select sum(sal) as total from emp group by deptno ) salt ));
