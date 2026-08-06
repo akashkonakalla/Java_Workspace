@@ -42,15 +42,22 @@ public class NeonNumber {
 
 	private static int sumDigits(int n) {
 		// TODO Auto-generated method stub
-		int pow= (int) Math.pow(n, 2);
+		int pow= Math.powExact(n, 2);
 		int c=0;
-		while(pow>0) {
-			int rem=pow%10;
+//		while(pow>0) {
+//			int rem=pow%10;
+//			pow/=10;
+//			c+=rem;
+//		}
+//		System.out.println("The value of pow is "+ pow);
+		for( ;pow>0;) {
+			
+			c+= pow%10;
 			pow/=10;
-			c+=rem;
+//			System.out.println("value of pow currently is : "+ pow);
+			
+			
 		}
-		System.out.println("The value of pow is "+ pow);
-//		for(int i=pow)
 		return c;
 	}
 
