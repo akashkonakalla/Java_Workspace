@@ -9,13 +9,6 @@ import java.util.Scanner;
 
 3.Find the sum of all even numbers from 1 to 100.
 
- *SQL* 
-
-1.Write a query to display employees who work in the same department as employee 'SCOTT'.
-
-2.Display employees whose salary is greater than 3000, along with their department name.
-
-3.Find the average salary of each department along with the department name.
  */
 
 public class EvenSum {
