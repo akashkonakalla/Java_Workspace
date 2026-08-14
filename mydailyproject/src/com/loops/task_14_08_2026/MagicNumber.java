@@ -25,29 +25,27 @@ SQL -
  */
 
 public class MagicNumber {
-	
+
 	static void magicNumber(int n) {
-		
-		if(n==1) {
+
+		if (n == 1) {
 			System.out.println("Magic number");
-		}
-		else if(n>=10) {
-			int sum=0;
-			while(n>0) {
-				sum+=n%10;
-				n/=10;
+		} else if (n >= 10) {
+			int sum = 0;
+			while (n > 0) {
+				sum += n % 10;
+				n /= 10;
 			}
 			magicNumber(sum);
-		}
-		else
+		} else
 			System.out.println("Not Magic number");
-		 
+
 	}
-	
+
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number");
-		int n=sc.nextInt();
+		int n = sc.nextInt();
 		magicNumber(n);
 	}
 
