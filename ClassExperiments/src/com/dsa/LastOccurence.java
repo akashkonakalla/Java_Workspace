@@ -12,10 +12,8 @@ public class LastOccurence {
 		}
 
 		System.out.println("\n\nTarget = " + target);
-
-		System.out.println("First occurrence       : " + firstOccurrence(arr, target));
+		System.out.println(" occurrence       : " + firstOccurrence(arr, target));
 	}
-
 	static int lastOccurrence(int[] arr, int target) {
 		int low = 0, high = arr.length - 1;
 		int ans = -1;
@@ -32,7 +30,6 @@ public class LastOccurence {
 				high = mid - 1;
 			}
 		}
-
 		return ans;
 	}
 }
