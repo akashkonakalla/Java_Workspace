@@ -10,7 +10,14 @@ public class SeperateNumbers {
 	int n=sc.nextInt();
 	int[] arr=new int[n];
 	System.out.printf("Enter the %d values of the array\n",n);
-	int p=0,neg=0,z=0;
+	int positiveCount = 0;
+	int negativeCount = 0;
+	int zeroCount = 0;
+
+	int negativeIndex = 0;
+	int positiveIndex = 0;
+	int zeroIndex = 0;
+	
 	for(int i=0;i<n;i++) {
 		arr[i]=sc.nextInt();
 		if(arr[i]==0)
