@@ -11,10 +11,10 @@ public static void main(String[] args) {
 	int max=Math.max(a1.length, a2.length);
 	int[] a3= new int[max];
 	for(int i=0;i<max;i++) {
-		if(i>a1.length) {
+		if(i>=a1.length) {
 			a3[i]=a2[i];
 		}
-		else if(i>a2.length) {
+		else if(i>=a2.length) {
 			a3[i]=a1[i];
 		}
 		else
