@@ -37,8 +37,13 @@ public class SeperateNumbers {
 			positive[ip++]=arr[i];
 	}
 	
-	System.out.println("The Positive numbers are : "+ Arrays.toString(positive));	
-	System.out.println("The Negative numbers are : "+ Arrays.toString(negative));
-	System.out.println("The Zero's are : "+ Arrays.toString(zero));
+	System.out.println("\nThe Positive numbers are : "+ Arrays.toString(positive));
+	System.out.println("The count of positive numbers : "+p);
+	
+	System.out.println("\nThe Negative numbers are : "+ Arrays.toString(negative));
+	System.out.println("The count of negative numbers : "+neg);
+	
+	System.out.println("\nThe Zero's are : "+ Arrays.toString(zero));
+	System.out.println("The count of zero's are : "+z);
 }
 }
