@@ -16,19 +16,27 @@ public class ColSum {
 			for (int j = 0; j < c; j++) {
 				System.out.printf("Enter the values of matrix matrix[%d][%d] :", i, j);
 				matrix[i][j] = sc.nextInt();
-				
+
 			}
 		}
-		
+
+		System.out.println("The given matrix is :");
+		for (int[] i : matrix) {
+			for (int n : i) {
+				System.out.print(n + "\t");
+			}
+			System.out.println();
+		}
+
 		for (int i = 0; i < r; i++) {
 			int colsum = 0;
 			for (int j = 0; j < c; j++) {
-				colsum+=matrix[j][i];
-				
+				colsum += matrix[j][i];
+
 			}
 
-			System.out.printf("The sum of the numbers in the column %d matrix : %d \n",i+1, colsum);
-			
+			System.out.printf("The sum of the numbers in the column %d matrix : %d \n", i + 1, colsum);
+
 		}
 	}
 }
