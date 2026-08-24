@@ -1,5 +1,6 @@
 package com.arrays.task_24_08_2026;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 //Calculate and print the Row sum for each row
@@ -20,13 +21,19 @@ public class RowSum {
 			}
 		}
 		
+		System.out.println("The given matrix is :");
+		for (int[] i : matrix) {
+			for (int n : i) {
+				System.out.print(n + "\t");
+			}
+			System.out.println();
+		}
+		
 		for (int i = 0; i < r; i++) {
 			int rowsum = 0;
 			for (int j = 0; j < c; j++) {
 				rowsum+=matrix[i][j];
-				
 			}
-
 			System.out.printf("The sum of the numbers in the row %d matrix : %d \n",i+1, rowsum);
 			
 		}
