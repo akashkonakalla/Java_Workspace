@@ -17,10 +17,10 @@ public class RowSum {
 			for (int j = 0; j < c; j++) {
 				System.out.printf("Enter the values of matrix matrix[%d][%d] :", i, j);
 				matrix[i][j] = sc.nextInt();
-				
+
 			}
 		}
-		
+
 		System.out.println("The given matrix is :");
 		for (int[] i : matrix) {
 			for (int n : i) {
@@ -28,14 +28,16 @@ public class RowSum {
 			}
 			System.out.println();
 		}
-		
+		System.out.println();
 		for (int i = 0; i < r; i++) {
 			int rowsum = 0;
 			for (int j = 0; j < c; j++) {
-				rowsum+=matrix[i][j];
+				rowsum += matrix[i][j];
 			}
-			System.out.printf("The sum of the numbers in the row %d matrix : %d \n",i+1, rowsum);
-			
+
+			System.out.print((i + 1) + ") " + Arrays.toString(matrix[i]));
+			System.out.printf(" Row Sum = %d \n", rowsum);
+
 		}
 	}
 }
