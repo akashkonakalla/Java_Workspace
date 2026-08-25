@@ -1,6 +1,5 @@
 package com.arrays.task_25_08_2026;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -24,35 +23,35 @@ Transpose Matrix:
  */
 public class Transpose {
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the row size of matrix");
-		int r=sc.nextInt();
+		int r = sc.nextInt();
 		System.out.println("Enter the column size of matrix");
-		int c=sc.nextInt();
-		int[][] m=new int[r][c];
+		int c = sc.nextInt();
+		int[][] m = new int[r][c];
 		System.out.println("Enter the elements in the matrix: ");
-		for(int i=0;i<r;i++) {
-			for(int j=0;j<c;j++) {
-				m[i][j]=sc.nextInt();
+		for (int i = 0; i < r; i++) {
+			for (int j = 0; j < c; j++) {
+				m[i][j] = sc.nextInt();
 			}
 		}
 		System.out.println("Original Matrix  : ");
-		for(int[] i:m) {
-			for(int n:i) {
-				System.out.print(n+"\t");
+		for (int[] i : m) {
+			for (int n : i) {
+				System.out.print(n + "\t");
 			}
 			System.out.println();
 		}
-		int[][] transpose=new int[c][r];
-		for(int i=0;i<c;i++) {
-			for(int j=0;j<r;j++) {
-				transpose[i][j]=m[j][i];
+		int[][] transpose = new int[c][r];
+		for (int i = 0; i < c; i++) {
+			for (int j = 0; j < r; j++) {
+				transpose[i][j] = m[j][i];
 			}
 		}
 		System.out.println("Matrix after Transpose : ");
-		for(int[] i:transpose) {
-			for(int n:i) {
-				System.out.print(n+"\t");
+		for (int[] i : transpose) {
+			for (int n : i) {
+				System.out.print(n + "\t");
 			}
 			System.out.println();
 		}
