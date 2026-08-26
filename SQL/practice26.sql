@@ -13,4 +13,4 @@ select empno, ename, job,mgr, hiredate,sal, comm,deptno from sal_count where rnk
 
 with result as (
 select *,ntile(4) over(order by sal desc) as lastppl from emp
-) select *from result where lastppl =4;
+) select empno, ename, job, mgr, hiredate, sal, comm, deptno from result where lastppl =4;
