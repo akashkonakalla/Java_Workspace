@@ -22,7 +22,7 @@ public class PersonalLoan extends Loan {
 				System.out.println("Something went wrong!");
 			}
 		} else {
-			System.out.println("You are not elligible for Personal Loan, you request is rejected");
+			System.out.println("You are not elligible for Personal Loan, your request is rejected");
 		}
 
 	}
