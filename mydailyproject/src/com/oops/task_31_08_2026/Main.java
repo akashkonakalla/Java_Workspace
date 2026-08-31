@@ -33,6 +33,8 @@ public class Main extends BankAccount {
 				System.out.println("Thank you for Banking with us :) , exiting");
 				return;
 			}
+
+			default -> System.out.println("\nInvalid choice\n");
 			}
 		}
 	}
