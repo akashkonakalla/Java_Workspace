@@ -26,7 +26,7 @@ delimiter $$
 drop trigger if exists beforeInsertEmp $$
 create trigger beforeInsertEmp
 before insert
-on emp_audit
+on emp
 for each row
 begin 
 if new.sal < 15000 then 
@@ -34,3 +34,6 @@ set new.sal=15000;
 end if;
 end
 $$
+select *from emp;
+insert into emp(empno, ename, job, mgr, hiredate, sal, comm, deptno) values(4444,'AKASH','CEO',NULL,'2004-08-24',4444.00,NULL,20);
+
