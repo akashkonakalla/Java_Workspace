@@ -41,30 +41,25 @@ update emp set sal=5100 where empno = 7839;
 
 delimiter $$
 drop procedure if exists cursorP;
-create procedure cursorP(out answer varchar(1000))
+create procedure cursorP()
 begin
 declare finished int default 0;
 declare eNo int default 0;
 declare eNme varchar(40) default '';
 declare eSal int default 0;
 declare empsal cursor for 
-select empno,ename,sal from emp where sal>1000;
+select empno,ename,sal from emp where sal>50000;
 declare continue handler for not found set finished =1;
-
-set answer = '';
 open empsal;
-
 label:loop
 fetch empsal into eNo,eNme,eSal ;
 if finished =1 then
  leave label;
 end if;
-set answer = concat( answer,'EmpNo: ', eNo,', Name: ', eNme,', Salary: ', eSal,'\n');
-
+select eNo,eNme,eSal;
 end loop;
 close empsal;
 end
 $$
-
 call cursorP(@ans);
 select @ans;
