@@ -17,9 +17,17 @@ end if;
 end loop label;
 end
 $$
-
-call newP();
 call newRec();
+
+DELIMITER $$
+CREATE FUNCTION newFunc()
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    RETURN 444;
+END$$
+
+SELECT newFunc();
 
 
 
