@@ -27,26 +27,21 @@ public class ExceptionHandling {
 	public static void main(String[] args) {
 
 		Scanner s = new Scanner(System.in);
-	    System.out.println("Enter the number 1 in string format");
-	    String s1= s.next();
-	    System.out.println("Enter the number 2 in string format");
-	    String s2= s.next();
-	    
-	    try {
-	    	int a = Integer.parseInt(s1);
-	    	int b= Integer.parseInt(s2);
-	    	
-	    	try {
-	    		System.out.println(a/b);
-	    	}
-	    	catch(ArithmeticException e) {
-	    		e.printStackTrace();
-	    	}
-	    	
-	    }catch (NumberFormatException ne) {
-	    	ne.printStackTrace();
-	    }
-	    
+		System.out.println("Enter the number 1 in string format");
+		String s1 = s.next();
+		System.out.println("Enter the number 2 in string format");
+		String s2 = s.next();
+
+		try {
+			int a = Integer.parseInt(s1);
+			int b = Integer.parseInt(s2);
+			System.out.println(a / b);
+
+		} catch (NumberFormatException ne) {
+			ne.printStackTrace();
+		} catch (ArithmeticException e) {
+			e.printStackTrace();
+		}
 
 	}
 
