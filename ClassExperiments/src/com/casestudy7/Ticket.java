@@ -26,6 +26,7 @@ public abstract class Ticket {
 		System.out.println("Ticket Type  : " + ticketType);
 		System.out.println("Base Price   : " + basePrice);
 		System.out.println("Final Price  : " + calculatePrice());
+		System.out.println();
 	}
 
 }
