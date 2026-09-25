@@ -16,7 +16,11 @@ public class FileHandling1 {
 	public static void main(String[] args) {
 		File f = new File("C:\\Users\\akhil\\Music\\new\\sample.txt");
 		try {
-			System.out.println(f.createNewFile());
+			boolean flag = f.createNewFile();
+			if (flag)
+				System.out.println("File created successfully");
+			else
+				System.out.println("Something went wrong");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
