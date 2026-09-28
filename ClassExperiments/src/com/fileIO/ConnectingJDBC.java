@@ -12,7 +12,7 @@ public class ConnectingJDBC {
 
 //		1. Driver Initialization
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
