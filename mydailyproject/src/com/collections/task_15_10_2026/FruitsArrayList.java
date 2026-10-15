@@ -45,8 +45,11 @@ public class FruitsArrayList {
 		fruit1.remove("Orange");
 
 		System.out.println("All fruits in 1 after removing Orange : " + fruit1);
-		System.out.println(fruit1.retainAll(fruit2));
-		System.out.println(fruit2.retainAll(fruit1));
+		System.out.println("Fruit1 contains apple or not : " + fruit1.contains("Apple"));
+		System.out.println("Fruit2 contains apple or not : " + fruit2.contains("Apple"));
+
+		fruit1.retainAll(fruit2);
+		fruit2.retainAll(fruit1);
 
 		System.out.println("All fruits common in 1 : " + fruit1);
 		System.out.println("All fruits common in 2 : " + fruit2);
