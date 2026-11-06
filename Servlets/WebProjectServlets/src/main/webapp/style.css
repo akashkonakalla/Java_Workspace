@@ -1,0 +1,268 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+:root {
+    --primary: #0d6efd;
+    --text: #212529;
+    --muted: #667085;
+    --page-bg: #f4f7fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background: var(--page-bg);
+}
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    letter-spacing: 0.3px;
+}
+
+.nav-link {
+    margin-left: 10px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #9ec5fe !important;
+}
+
+/* =========================
+   LANDING PAGE
+========================= */
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #eaf2ff 0%, #ffffff 75%);
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    max-width: 620px;
+    font-size: clamp(2.3rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero-title span {
+    color: var(--primary);
+}
+
+.hero-description {
+    max-width: 570px;
+    margin: 22px 0 28px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.hero-visual {
+    padding: 65px 25px;
+    border: 1px solid #edf0f5;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(24, 39, 75, 0.08);
+}
+
+.hero-icon {
+    margin-bottom: 18px;
+    font-size: 6rem;
+}
+
+.section-padding {
+    padding: 75px 0;
+}
+
+.section-title {
+    margin-bottom: 14px;
+    font-size: clamp(1.8rem, 4vw, 2.25rem);
+    font-weight: 750;
+}
+
+.section-description {
+    max-width: 680px;
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.service-card {
+    height: 100%;
+    padding: 34px 25px;
+    border: 1px solid #edf0f5;
+    border-radius: 14px;
+    background: #f9fbff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(24, 39, 75, 0.09);
+}
+
+.service-icon {
+    margin-bottom: 18px;
+    font-size: 2.8rem;
+}
+
+.service-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.about-section {
+    background: #eaf2ff;
+}
+
+/* =========================
+   LOGIN AND REGISTRATION
+========================= */
+.form-page {
+    min-height: calc(100vh - 135px);
+    display: flex;
+    align-items: center;
+    padding: 55px 0;
+}
+
+.form-card {
+    padding: 38px;
+    border: 1px solid #edf0f5;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(24, 39, 75, 0.08);
+}
+
+.form-label {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 46px;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.14);
+}
+
+.form-submit-btn {
+    min-height: 47px;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    transition: transform 0.2s ease;
+}
+
+.form-submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.login-icon {
+    margin-bottom: 12px;
+    font-size: 3.5rem;
+}
+
+.text-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.text-link:hover,
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    color: #667085;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE STYLES
+========================= */
+@media (max-width: 991.98px) {
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 9px 0;
+    }
+
+    .hero-section {
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .hero-title,
+    .hero-description {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero-section .d-flex {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        padding: 55px 0;
+    }
+
+    .hero-visual {
+        padding: 45px 18px;
+    }
+
+    .hero-icon {
+        font-size: 4.5rem;
+    }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+    .form-page {
+        padding: 30px 12px;
+    }
+
+    .form-card {
+        padding: 26px 20px;
+    }
+}
