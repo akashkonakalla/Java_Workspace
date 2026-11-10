@@ -36,13 +36,13 @@ public class LoginController extends HttpServlet {
 		if (st.checkUserExist(l)) {
 
 //			System.out.println("entered true ");
-			RequestDispatcher rd = request.getRequestDispatcher("index.html");
+			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			rd.forward(request, response);
 
 		} else {
 
 //			System.out.println("false");
-			RequestDispatcher rd = request.getRequestDispatcher("login.html");
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 			rd.forward(request, response);
 
 		}
