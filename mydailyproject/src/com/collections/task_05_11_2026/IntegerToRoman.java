@@ -22,8 +22,12 @@ public class IntegerToRoman {
 		System.out.println("Enter the number to convert into roman number");
 		int n = sc.nextInt();
 
-		System.out.println(intToRoman(n));
+		sc.nextLine();
+		System.out.println(n + " Integer to roman : " + intToRoman(n));
 
+		System.out.println("Enter the roman number to convert into integer");
+		String roman = sc.nextLine();
+		System.out.println(roman + " Roman to integer : " + romanToInt(roman));
 	}
 
 	private static String intToRoman(int n) {
@@ -42,6 +46,44 @@ public class IntegerToRoman {
 		}
 
 		return res.toString();
+	}
+
+	private static int value(char ch) {
+		switch (ch) {
+		case 'I':
+			return 1;
+		case 'V':
+			return 5;
+		case 'X':
+			return 10;
+		case 'L':
+			return 50;
+		case 'C':
+			return 100;
+		case 'D':
+			return 500;
+		case 'M':
+			return 1000;
+		default:
+			throw new IllegalArgumentException("Invalid Roman symbol");
+		}
+	}
+
+	public static int romanToInt(String roman) {
+		int total = 0;
+
+		for (int i = 0; i < roman.length(); i++) {
+			int number = value(roman.charAt(i));
+
+			if (i + 1 < roman.length() && number < value(roman.charAt(i + 1))) {
+				total -= number;
+			} else {
+				total += number;
+			}
+		}
+
+		return total;
+
 	}
 
 }
