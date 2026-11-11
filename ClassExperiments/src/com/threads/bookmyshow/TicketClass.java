@@ -4,14 +4,14 @@ class BookMyShow {
 
 	int tickets = 10;
 
-	public void buyTickets(int t, String name) {
+	synchronized public void buyTickets(int t, String name) {
 		if (tickets >= t) {
 			System.out.println(t + " tickets purchased successfully by " + name);
 			tickets -= t;
 			System.out.println("Name : " + name + " Remaining tickets are " + tickets);
 		} else {
 			System.out.println("sold out!");
-			System.out.println("The number of tickets left" + tickets);
+			System.out.println("The number of tickets left : " + tickets);
 		}
 	}
 }
@@ -28,7 +28,7 @@ class BuyTickets extends Thread {
 		this.name = name;
 	}
 
-	public void run() {
+	 public void run() {
 		bm.buyTickets(tickets, name);
 	}
 }
