@@ -42,11 +42,11 @@ public class StudentController extends HttpServlet {
 		StudentDAO st = new StudentDAO();
 
 		if (st.insertStudent(s).equals("success")) {
-			RequestDispatcher rd = request.getRequestDispatcher("login.html");
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 			rd.forward(request, response);
 		}
 		else {
-			RequestDispatcher rd = request.getRequestDispatcher("index.html");
+			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			rd.forward(request, response);
 		}
 
