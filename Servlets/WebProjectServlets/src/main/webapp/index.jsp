@@ -17,7 +17,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<a class="navbar-brand fw-bold" href="index.html">Student Portal</a>
+			<a class="navbar-brand fw-bold" href="index.jsp">Student Portal</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#mainNavbar"
 				aria-controls="mainNavbar" aria-expanded="false"
@@ -28,7 +28,7 @@
 			<div class="collapse navbar-collapse" id="mainNavbar">
 				<ul class="navbar-nav ms-auto align-items-lg-center">
 					<li class="nav-item"><a class="nav-link active"
-						href="index.html">Home</a></li>
+						href="index.jsp">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
 					<li class="nav-item"><a class="nav-link" href="#about">About
 							Us</a></li>
@@ -37,8 +37,8 @@
 				</ul>
 				<div
 					class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
-					<a href="login.html" class="btn btn-outline-light">Login</a> <a
-						href="register.html" class="btn btn-primary">Register</a>
+					<a href="login.jsp" class="btn btn-outline-light">Login</a> <a
+						href="register.jsp" class="btn btn-primary">Register</a>
 				</div>
 			</div>
 		</div>
@@ -57,8 +57,8 @@
 							access your student account. Register today and manage your
 							student information in one place.</p>
 						<div class="d-flex flex-wrap gap-3">
-							<a href="register.html" class="btn btn-primary btn-lg">Get
-								Started</a> <a href="login.html" class="btn btn-outline-dark btn-lg">Login
+							<a href="register.jsp" class="btn btn-primary btn-lg">Get
+								Started</a> <a href="login.jsp" class="btn btn-outline-dark btn-lg">Login
 								to Account</a>
 						</div>
 					</div>
