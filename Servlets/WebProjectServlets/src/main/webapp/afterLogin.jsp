@@ -25,11 +25,6 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			Welcome <span> <%
- session.getAttribute("username");
- %>>
-			</span>
-
 			<div class="collapse navbar-collapse" id="mainNavbar">
 				<ul class="navbar-nav ms-auto align-items-lg-center">
 					<li class="nav-item"><a class="nav-link active"
@@ -40,10 +35,8 @@
 					<li class="nav-item"><a class="nav-link" href="#contact">Contact
 							Us</a></li>
 				</ul>
-				<div
-					class="d-flex flex-column flex-lg-row gap-2 ms-lg-3 mt-3 mt-lg-0">
-					<a href="LogoutController" class="btn btn-danger">Logout</a>
-				</div>
+				<a href="LogoutController" class="btn btn-danger" >Logout</a>
+				
 			</div>
 		</div>
 	</nav>
