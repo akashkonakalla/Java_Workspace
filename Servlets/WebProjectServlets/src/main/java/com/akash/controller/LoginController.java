@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import com.akash.dao.StudentDAO;
 import com.akash.model.Login;
+import com.mysql.cj.Session;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -11,6 +12,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class LoginController
@@ -36,8 +38,13 @@ public class LoginController extends HttpServlet {
 		if (st.checkUserExist(l)) {
 
 //			System.out.println("entered true ");
-			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-			rd.forward(request, response);
+//			RequestDispatcher rd = request.getRequestDispatcher("afterLogin.jsp");
+			
+
+			HttpSession session = request.getSession(true);
+			session.setAttribute("username",username);
+			
+			response.sendRedirect("afterLogin.jsp");
 
 		} else {
 
