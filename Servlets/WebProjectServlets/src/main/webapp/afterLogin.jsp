@@ -35,8 +35,8 @@
 					<li class="nav-item"><a class="nav-link" href="#contact">Contact
 							Us</a></li>
 				</ul>
-				<a href="LogoutController" class="btn btn-danger" >Logout</a>
-				
+				<a href="LogoutController" class="btn btn-danger">Logout</a>
+
 			</div>
 		</div>
 	</nav>
@@ -50,9 +50,8 @@
 						<h1 class="hero-title">
 							Welcome <span><%=session.getAttribute("username")%></span>
 						</h1>
-						<p class="hero-description">A simple platform to create and
-							access your student account. Register today and manage your
-							student information in one place.</p>
+						<p class="hero-description">Welcome to your dashboard. Access
+							your student account and manage your information in one place.</p>
 						<div class="d-flex flex-wrap gap-3">
 							<a href="register.jsp" class="btn btn-primary btn-lg">Get
 								Started</a> <a href="login.jsp" class="btn btn-outline-dark btn-lg">Login
