@@ -54,7 +54,7 @@ if (session.getAttribute("username") == null) {
 					<div class="col-lg-6">
 						<p class="eyebrow">YOUR LEARNING JOURNEY STARTS HERE</p>
 						<h1 class="hero-title">
-							Welcome <span><%=session.getAttribute("username")%></span>
+							Welcome back, <span><%=session.getAttribute("username")%></span>!
 						</h1>
 						<p class="hero-description">Welcome to your dashboard. Access
 							your student account and manage your information in one place.</p>
