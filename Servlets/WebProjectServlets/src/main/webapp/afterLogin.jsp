@@ -28,7 +28,7 @@
 			<div class="collapse navbar-collapse" id="mainNavbar">
 				<ul class="navbar-nav ms-auto align-items-lg-center">
 					<li class="nav-item"><a class="nav-link active"
-						href="index.jsp">Home</a></li>
+						href="afterlogin.jsp" aria-current="page"> Dashboard </a></li>
 					<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
 					<li class="nav-item"><a class="nav-link" href="#about">About
 							Us</a></li>
@@ -52,7 +52,7 @@
 						</h1>
 						<p class="hero-description">Welcome to your dashboard. Access
 							your student account and manage your information in one place.</p>
-						
+
 					</div>
 					<div class="col-lg-6">
 						<div class="hero-visual text-center">
