@@ -52,11 +52,7 @@
 						</h1>
 						<p class="hero-description">Welcome to your dashboard. Access
 							your student account and manage your information in one place.</p>
-						<div class="d-flex flex-wrap gap-3">
-							<a href="register.jsp" class="btn btn-primary btn-lg">Get
-								Started</a> <a href="login.jsp" class="btn btn-outline-dark btn-lg">Login
-								to Account</a>
-						</div>
+						
 					</div>
 					<div class="col-lg-6">
 						<div class="hero-visual text-center">
