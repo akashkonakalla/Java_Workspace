@@ -52,7 +52,7 @@ if (session.getAttribute("username") == null) {
 			<div class="container">
 				<div class="row align-items-center g-5">
 					<div class="col-lg-6">
-						<p class="eyebrow">YOUR LEARNING JOURNEY STARTS HERE</p>
+						<p class="eyebrow">YOUR STUDENT DASHBOARD</p>
 						<h1 class="hero-title">
 							Welcome back, <span><%=session.getAttribute("username")%></span>!
 						</h1>
