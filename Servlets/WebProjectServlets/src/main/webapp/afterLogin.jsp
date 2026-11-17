@@ -23,7 +23,7 @@ if (session.getAttribute("username") == null) {
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<a class="navbar-brand fw-bold" href="index.jsp">Student Portal</a>
+			<a class="navbar-brand fw-bold" href="afterlogin.jsp">Student Portal</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#mainNavbar"
 				aria-controls="mainNavbar" aria-expanded="false"
